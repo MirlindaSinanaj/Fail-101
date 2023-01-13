@@ -1,0 +1,66 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 278, in script
+    python:
+  File "renpy/common/00start.rpy", line 278, in script
+    python:
+  File "renpy/common/00start.rpy", line 280, in <module>
+    renpy.call_in_new_context(_restart[2])
+  File "game/achievement_screen.rpy", line 125, in passive_function
+    if len(persistent.my_achievements) >= (len(achievement_name) - 1):
+TypeError: object of type 'NoneType' has no len()
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/main.py", line 660, in main
+    run(restart)
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/main.py", line 146, in run
+    renpy.execution.run_context(True)
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/execution.py", line 938, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 278, in script
+    python:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "renpy/common/00start.rpy", line 278, in script
+    python:
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 280, in <module>
+    renpy.call_in_new_context(_restart[2])
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/game.py", line 346, in call_in_new_context
+    return renpy.execution.run_context(False)
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/execution.py", line 938, in run_context
+    context.run()
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Users/johancuda/Desktop/renpy-8.0.3-sdk/renpy/display/core.py", line 4101, in interact_core
+    i()
+  File "game/achievement_screen.rpy", line 125, in passive_function
+    if len(persistent.my_achievements) >= (len(achievement_name) - 1):
+TypeError: object of type 'NoneType' has no len()
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.0.3.22090809
+Fail 101 1.2
+Fri Jan 13 15:12:28 2023
