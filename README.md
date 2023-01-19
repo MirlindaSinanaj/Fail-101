@@ -16,7 +16,7 @@
 
 ## How to play
 
- You can test the game on [itch.io](https://johancuda.itch.io/fail-101).
+ You can test the game on [itch.io](https://johancuda.itch.io/fail-101). You just have to down load the file corresponding to your OS.
 
 ## Using the Ren'Py launcher
 
@@ -37,7 +37,7 @@
 
  The achievments system was designed by `Angel Seraph` and is available [here](https://glsuoa.itch.io/renpy-achievements).
 
- Every visual artwork displayed in the game was created using Stable Diffusion 1.5 on [PlaygroundAI](https://playgroundai.com/).
+ Every visual artwork displayed in the game was generated using Stable Diffusion 1.5 on [PlaygroundAI](https://playgroundai.com/).
 
  The soundtrack is available [here](https://pixabay.com/fr/music/jazz-traditionnel-cool-jazz-loops-2641/).
  
