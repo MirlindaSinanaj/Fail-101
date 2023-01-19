@@ -30,7 +30,7 @@
 
   ![Achievements screenshot](screeshots/achievements.png "A screenshot from the achievements menu.")
 
- 2. You'll find in the `Preferences` menu a "Reset persistent data" button. This won't affect your achievements but will reset all the other variables (objects, decisions...).
+ 2. You'll find in the `Preferences` menu a "Reset Persistent Data" button. This won't affect your achievements but will reset all the other variables (objects, decisions...).
 
 
  ## About Fail 101
