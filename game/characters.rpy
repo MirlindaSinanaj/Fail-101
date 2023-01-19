@@ -60,7 +60,7 @@ image zombies = "zombiesHD.png"
 
 image award = "awardHD.png"
 
-
+## This function is used when the user clicks the "Delete Permanent Data" button.
 init python:
     def clear_variables():
         persistent.frustrated = False
