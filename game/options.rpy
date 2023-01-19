@@ -34,6 +34,12 @@ This game was designed during Isaac Pante's course "Fiction interactive" in 2022
 
 Every visual used was generated using Stable Diffusion 1.5.
 
+The achievments system was designed by `Angel Seraph` and is available {a=https://glsuoa.itch.io/renpy-achievements}here{/a}.
+
+Every visual artwork displayed in the game was generated using Stable Diffusion 1.5 on {a=https://playgroundai.com/}PlaygroundAI{/a}.
+
+The soundtrack is available {a=https://pixabay.com/fr/music/jazz-traditionnel-cool-jazz-loops-2641/}here{/a}.
+
 Written by Johan Cuda
 """)
 
