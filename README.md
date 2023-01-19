@@ -40,5 +40,7 @@
  Every visual artwork displayed in the game was generated using Stable Diffusion 1.5 on [PlaygroundAI](https://playgroundai.com/).
 
  The soundtrack is available [here](https://pixabay.com/fr/music/jazz-traditionnel-cool-jazz-loops-2641/).
+
+ Made using Ren'Py.
  
 
