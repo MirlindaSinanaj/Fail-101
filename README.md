@@ -11,34 +11,34 @@
 
  You are on your first day at university. Your only goal : fail in the most magical way. Be creative.
 
- ![Main menu screen shit](screeshots/main_menu.png "A screenshot from the main menu.")
+ ![Main menu screenshot](screeshots/main_menu.png "A screenshot from the main menu.")
 
 
 ## How to play
 
- You can play test the game on itch.io (lien ici)
+ You can test the game on [itch.io](https://johancuda.itch.io/fail-101).
+
+## Using the Ren'Py launcher
+
+ If you want to check and use the game files available in this repositery, you can download the [Ren'Py launcher](https://www.renpy.org/latest.html). You can then use it to launch the game and modify it.
 
  ## Interface
 
- This game is using a classic Ren'Py interface. Howeveer, it features a few extra things.
+ This game is using a classic Ren'Py interface. However, it features a few extra things:
 
- 1. You'll find in the main menu an achievement system.
+ 1. You'll find in the main menu an achievement system designed by `Angel Seraph` (see below in the `About Fail 101` section).
+
+  ![Achievements screenshot](screeshots/achievements.png "A screenshot from the achievements menu.")
 
  2. You'll find in the `Preferences` menu a "Reset persistent data" button. This won't affect your achievements but will reset all the other variables (objects, decisions...).
 
 
  ## About Fail 101
 
- The achievments system was designed by ... and is available here (link).
+ The achievments system was designed by `Angel Seraph` and is available [here](https://glsuoa.itch.io/renpy-achievements).
 
- Every visual artwork displayed in the game was created using Stable Diffusion 1.5 on playgroudai.com (link).
+ Every visual artwork displayed in the game was created using Stable Diffusion 1.5 on [PlaygroundAI](https://playgroundai.com/).
 
+ The soundtrack is available [here](https://pixabay.com/fr/music/jazz-traditionnel-cool-jazz-loops-2641/).
  
-
-
-
- Mentionner la création d'images
-
- Mentionner la partie achievements
-
 

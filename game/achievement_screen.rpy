@@ -1,5 +1,3 @@
-## This script was created by Angel Seraph and is available here : https://glsuoa.itch.io/renpy-achievements
-
 ## Here we have the menu screen to display all the locked
 ## and unlocked achievements.
 

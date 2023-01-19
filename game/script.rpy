@@ -73,7 +73,7 @@ label uni_hall:
     return
 
 label uni_cigarette:
-    inner_thoughts "I think I need a litte break before I enter this hellhole."
+    inner_thoughts "I think I need a little break before I enter this hellhole."
     inner_thoughts "..."
     inner_thoughts "You gotta be kidding me..."
     inner_thoughts "I really did forget my cigarettes."
@@ -92,7 +92,7 @@ label flee_victory:
     $ Achievement.add(achievement_flee)
     stop music
     play sound "audio/victory.mp3"
-    victory "You flee this place and go off-grid. There has been rumours going around of you owning a bagel shop along the coast, but who knows... "
+    victory "You flee this place and go off-grid. There has been rumors going around of you owning a bagel shop along the coast, but who knows... "
     return
 
 label staircase:
@@ -224,7 +224,7 @@ label cigarette_encounter:
                     you "You're seriously not going to give me a cigarette?"
                     smoker "..."
                     inner_thoughts "You look around and spot a chair lying a few meters away. You casually walk towards it, grab it, and proceed to throw it right at the face of the smoker. "
-                    inner_thoughts "They didn't even see it coming. They're now lying on the floor. You hear lound noises coming from behind and a security guard running towards you."
+                    inner_thoughts "They didn't even see it coming. They're now lying on the floor. You hear loud noises coming from behind and a security guard running towards you."
                     stop music
                     play sound "audio/victory.mp3"
                     victory "After a trial for aggravated assault, you're expelled! Congratulations!"
@@ -255,7 +255,7 @@ label upstairs:
 
 
         "Go back downstairs.":
-            inner_thoughts "Nervemind, I'll come back later."
+            inner_thoughts "Nevermind, I'll come back later."
             jump uni_hall
 
     return
@@ -289,23 +289,27 @@ label downstairs:
                             jump honesty_win
                     return
                 "I'd better shoot myself.":
-                    return
+                    jump downstairs
             return
 
         "Wander into the caves.":
-            if persistent.key:
-                inner_thoughts "Mhh I could try that key i found in Pr. Brown's desk."
-                menu:
-                    "Enter the caves, at your own risk.":
-                        jump gamelab
+            inner_thoughts "The door is locked."
 
-                    "Go back to explore the rest of the basement.":
-                        inner_thoughts "This place creeps me out. I'm out."
-                        jump downstairs
+            menu:
+                "Try the key you found in Pr. Brown's desk." if persistent.key:
+                    inner_thoughts "The door is now unlocked."
+                    menu:
+                        "Enter the caves, at your own risk.":
+                            jump gamelab
 
-            else:
-                you "You need a key to open this door."
-                jump downstairs
+                        "Go back to explore the rest of the basement.":
+                            inner_thoughts "This place creeps me out. I'm out."
+                            jump downstairs
+                    
+
+                "Come back later.":
+                    jump downstairs
+
             return
 
         "Enter the technical room.":
@@ -383,10 +387,10 @@ label uni_employee:
             $ persistent.first_ask = True
             jump upstairs_discovered
 
-        "Ask how to get exepelled.":
+        "Ask how to get expelled.":
             uni_employee "Hahahaah! I see you're a joker."
             you "Yes, indeed."
-            uni_employee "I think as long as you don't atack anyone, you'll be fine."
+            uni_employee "I think as long as you don't attack anyone, you'll be fine."
             jump upstairs_discovered
 
         "Take an appointment to discuss your courses." if persistent.first_ask:
@@ -406,7 +410,7 @@ label uni_employee:
             you "Thank you!"
             uni_employee "Get out of here! You'll hear from me again I guarantee it..."
             $ persistent.uni_employee_pissed = True
-            inner_thoughts "You didnt get expelled this time, but keep at it champ!"
+            inner_thoughts "You didn't get expelled this time, but keep at it champ!"
             jump upstairs_discovered
 
         "Jump to the employee and beat them to a pulp." if persistent.uni_employee_pissed:
@@ -417,11 +421,14 @@ label uni_employee:
             victory "You got expelled, congratulations! You can never go back to uni in your country, but hitting that useless employee was totally worth it."
             return
 
-        "Leave the banana peel that you found in the cafeteria at the door." if persistent.banana:
+        "Leave the banana peel that you found in the cafeteria at the door." if persistent.banana and persistent.revenge:
             $ banana_placed = True
             inner_thoughts "Hahaha that'll teach them a lesson."
             inner_thoughts "Mischief managed."
             inner_thoughts "Google it if you want, it's not that nerdy."
+            jump upstairs_discovered
+        
+        "Leave before getting sucked into academic administration.":
             jump upstairs_discovered
 
 
@@ -457,7 +464,7 @@ label dean:
                     inner_thoughts "He noticed."
                     inner_thoughts "Haha."
                     dean "I think you had a little accident..."
-                    you "Oh !! I'm so embarassed..."
+                    you "Oh !! I'm so embarrassed..."
                     inner_thoughts "The dean walks out rapidly."
                     dean "I'll bring you some paper!"
 
@@ -482,7 +489,7 @@ label dean:
             inner_thoughts "You can't take this anymore."
             inner_thoughts "With an elegant movement, you jump above the desk and send your right foot flying into the dean's jaw."
             inner_thoughts "Three day days later, the police found a tooth stuck in the wall."
-            inner_thoughts "Nicotine deprevation can be dangerous. Stay smokey."
+            inner_thoughts "Nicotine deprivation can be dangerous. Stay smokey."
             stop music
             play sound "audio/victory.mp3"
             victory "Congratulations! You got expelled!"
@@ -577,7 +584,7 @@ label brown_office_door:
                     jump brown_office
 
                 else:
-                    "Sorry... You suck at lockpicking apparently."
+                    "Sorry... You suck at lock picking apparently."
                     jump lockpicking
 
             "No, I shouldn't break into this office.":
@@ -682,7 +689,7 @@ label gamelab:
                     inner_thoughts "You leave the basement with a weird feeling."
                     inner_thoughts "Wall, that was kinda fun."
                     inner_thoughts "What was this place called again?"
-                    inner_thoughts "The Game somthing..."
+                    inner_thoughts "The Game something..."
                     inner_thoughts "Well, maybe this place is not that bad after all."
                     stop music
                     play sound "audio/defeat.mp3"
@@ -700,8 +707,8 @@ label banana_victory:
     stop music
     play sound "audio/victory.mp3"
     victory "Congrats! You got caught on the camera leaving the banana."
-    victory "You were chargend with manslaughter!"
-    victory "You spend the rest of your life in a penitenciary facility, what a life well lived!"
+    victory "You were charged with manslaughter!"
+    victory "You spend the rest of your life in a penitentiary facility, what a life well lived!"
 
 
 label class_defeat:
@@ -710,7 +717,7 @@ label class_defeat:
     $ Achievement.add(achievement_nerd)
     stop music
     play sound defeat
-    defeat "You attented 2 courses and liked it."
+    defeat "You attended 2 courses and liked it."
     defeat "You will now finish your semester."
     defeat "Nerd."
     $ persistent.attend_class = 0

@@ -1,5 +1,3 @@
-## This script was created by Angel Seraph and is available here : https://glsuoa.itch.io/renpy-achievements
-
 python early:
 
 
