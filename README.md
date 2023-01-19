@@ -16,11 +16,11 @@
 
 ## How to play
 
- You can test the game on [itch.io](https://johancuda.itch.io/fail-101). You just have to down load the file corresponding to your OS.
+ You can test the game on [itch.io](https://johancuda.itch.io/fail-101). You just have to download the file corresponding to your OS.
 
 ## Using the Ren'Py launcher
 
- If you want to check and use the game files available in this repositery, you can download the [Ren'Py launcher](https://www.renpy.org/latest.html). You can then use it to launch the game and modify it.
+ If you want to check and modify the game files available in this repositery, you can download the [Ren'Py launcher](https://www.renpy.org/latest.html). You can then use it to launch the game and modify it (you can check the documentation [here](https://www.renpy.org/doc/html/)).
 
  ## Interface
 
