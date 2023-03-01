@@ -38,7 +38,7 @@ screen achievement_menu():
                         
                         frame:
                             
-                            background Solid('#0088AA') ## Nice bright blue/turquoise.
+                            background Solid('#7d7d7d') ## Nice bright blue/turquoise.
 
                             hbox:
                                 yalign 0.5
