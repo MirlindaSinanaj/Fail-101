@@ -33,7 +33,7 @@
  2. You'll find in the `Preferences` menu a "Reset Persistent Data" button. This won't affect your achievements but will reset all the other variables (objects, decisions...).
 
 
- ## About Fail 101 
+ ## About Fail 101
 
  The achievments system was designed by `Angel Seraph` and is available [here](https://glsuoa.itch.io/renpy-achievements).
 
